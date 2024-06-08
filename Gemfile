@@ -19,6 +19,9 @@ end
 # 画像アップロード
 gem "carrierwave"
 
+# RubyがImageMagick(アップロードした画像のサイズを変更するためのもの)とやり取りできるようにする
+gem "mini_magick"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
