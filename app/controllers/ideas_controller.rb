@@ -8,6 +8,8 @@ class IdeasController < ApplicationController
 
   # GET /ideas/1 or /ideas/1.json
   def show
+    # 特定のアイデアに紐づくコメントがデータベースから取得
+    @comments = @idea.comments
   end
 
   # GET /ideas/new
